@@ -31,8 +31,12 @@ def index():
         delay = request.form['delay']
         if not delay:
             delay = 0
+        try:
+            int (delay)
+        except Exception:
+            return render_template('index.html', displayError='Delay must be positive number', form=form)
         if int(delay) < 0:
-            return render_template('index.html', displayError='Delay must be positive', form=form)
+            return render_template('index.html', displayError='Delay must be positive number', form=form)
         else:
             delay = int(delay)
         time.sleep(delay)
