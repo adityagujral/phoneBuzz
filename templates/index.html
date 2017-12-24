@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>Play Fizz Buzz</h1>
+      <form method="POST", action="/">
+         <fieldset>
+            <p>{{displayError}}</p><br>
+            {{ form.hidden_tag() }}
+            {{ form.number.label }}
+            {{ form.number}}
+            {{ form.delay.label }}
+            {{ form.delay}}
+            {{ form.submit() }}
+         </fieldset>
+      </form>
+   </body>
+</html>
