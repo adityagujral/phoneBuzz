@@ -7,8 +7,8 @@ from wtforms import StringField, SubmitField, validators
 
 accountSid = ''
 authToken = ''
-twiloNumber = '+19793832681'
-baseUrl = ' http://fizzbuzzlend.herokuapp.com'
+twiloNumber = ''
+baseUrl = ''
 
 welcomeUrl = (baseUrl + '/welcome').strip()
 
