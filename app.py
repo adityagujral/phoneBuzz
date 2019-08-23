@@ -5,8 +5,8 @@ from twilio.twiml.voice_response import VoiceResponse
 from twilio.rest import Client
 from wtforms import StringField, SubmitField, validators
 
-accountSid = 'AC8c827e01b451c5d2fdaa39a814ee8db2'
-authToken = '4b8c88d488d089e87389ec1c1680402f'
+accountSid = ''
+authToken = ''
 twiloNumber = '+19793832681'
 baseUrl = ' http://fizzbuzzlend.herokuapp.com'
 
